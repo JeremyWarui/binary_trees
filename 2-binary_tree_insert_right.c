@@ -1,4 +1,4 @@
-#include "binary-trees.h"
+#include "binary_trees.h"
 
 /**
  * binary_tree_insert_right - inserts a node as the right-child of another node

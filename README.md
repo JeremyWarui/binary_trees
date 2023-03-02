@@ -1,6 +1,6 @@
 # binary_trees
 
-This is a partner project in which we are implimenting Binary trees,Data Structure and Algorithms,Tree Traversal,Binary Search Tree and Data structures. In this project, we learnt what is a binary tree, the diff between a binary tree and a binhary search tree,possibl gains in terms of time complexity compared to linked lists,the depth,the height and the size of a binary tree.the different traversal methods to go through a binary tree, a complete, a full, a perfect, and a balanced binary tree.
+This is a partner project in which we are implimenting Binary trees,Data Structure and Algorithms,Tree Traversal,Binary Search Tree and Data structures. In this project, we learnt what is a binary tree, the diff between a binary tree and a binary search tree,possible gains in terms of time complexity compared to linked lists, the depth, the height and the size of a binary tree. The different traversal methods to go through a binary tree, a complete, a full, a perfect, and a balanced binary tree.
 
 Header file
 Contains all the prototypes of the projects functions.
@@ -16,6 +16,7 @@ Data structures
 Must include them in the header file.
 
 Basic Binary Tree
+```
 /**
  * struct binary_tree_s - Binary tree node
  *
@@ -31,96 +32,125 @@ struct binary_tree_s
     struct binary_tree_s *left;
     struct binary_tree_s *right;
 };
+```
 
-typedef struct binary_tree_s binary_tree_t;
+` typedef struct binary_tree_s binary_tree_t;`
+
 Binary Search Tree
-typedef struct binary_tree_s bst_t;
+
+` typedef struct binary_tree_s bst_t;`
+
 AVL Tree
-typedef struct binary_tree_s avl_t;
+
+` typedef struct binary_tree_s avl_t;`
+
 Max Binary Heap
-typedef struct binary_tree_s heap_t;
+
+`typedef struct binary_tree_s heap_t;`
 
 Print function
 Functions to print binary trees in a pretty way
-
+```
                            .----------------------(006)-------.
                       .--(001)-------.                   .--(008)--.
                  .--(-02)       .--(003)-------.       (007)     (009)
        .-------(-06)          (002)       .--(005)
   .--(-08)--.                           (004)
 (-09)     (-07)
+```
 
-Tasks
+### Tasks
 
-0. New node
+**0. New node**
 
-0-binary_tree_node.c: C function that creates a binary tree node with a given parent and value.
+`0-binary_tree_node.c`: C function that creates a binary tree node with a given parent and value.
 Returns a pointer to the new node, or NULL on failure.
-1. Insert left
 
-1-binary_tree_insert: C function that inserts a node as the left-child of another.
+**1. Insert left**
+
+`1-binary_tree_insert.c`: C function that inserts a node as the left-child of another.
+
 Returns a pointer to the new node, or NULL on failure.
 If the given parent already contains a left node, the new node takes its place and the old left-child becomes the left-child of the new node.
-2. Insert right
 
-2-binary_tree_insert_right.c: C function that inserts a node as the right-child of another.
+**2. Insert right**
+
+`2-binary_tree_insert_right.c`: C function that inserts a node as the right-child of another.
+
 Returns a pointer to the new node, or NULL on failure.
 If the given parent already contains a right node, the new node takes its place and the old right-child becomes the right-child of the new node.
-3. Delete
 
-3-binary_tree_delete.c: C function that deletes an entire binary tree.
-4. Is leaf
+**3. Delete**
 
-4-binary_tree_is_leaf.c: C function that checks if a given node is a leaf.
+`3-binary_tree_delete.c`: C function that deletes an entire binary tree.
+
+**4. Is leaf**
+
+`4-binary_tree_is_leaf.c`: C function that checks if a given node is a leaf.
 Returns 1 if the node is a leaf, 0 otherwise.
-5. Is root
 
-5-binary_tree_is_root.c: C function that checks if a given node is a root.
+**5. Is root**
+
+`5-binary_tree_is_root.c`: C function that checks if a given node is a root.
 Returns 1 if the node is a root, 0 otherwise.
-6. Pre-order traversal
 
-6-binary_tree_preorder.c: C function that traverses a tree using pre-order traversal.
-7. In-order traversal
+**6. Pre-order traversal**
 
-7-binary_tree_inorder.c: C function that traverses a tree using in-order traversal.
-8. Post-order traversal
+`6-binary_tree_preorder.c`: C function that traverses a tree using pre-order traversal.
 
-8-binary_tree_postorder.c: C function that traverses a tree using post-order traversal.
-9. Height
+**7. In-order traversal**
 
-9-binary_tree_height.c: C function that returns the height of a binary tree.
-10. Depth
+`7-binary_tree_inorder.c`: C function that traverses a tree using in-order traversal.
 
-10-binary_tree_depth.c: C function that returns the depth of a given node in a binary tree.
-11. Size
+**8. Post-order traversal**
 
-11-binary_tree_size.c: C function that returns the size of a binary tree.
-12. Leaves
+`8-binary_tree_postorder.c`: C function that traverses a tree using post-order traversal.
 
-12-binary_tree_leaves.c: C function that returns the number of leaves in a binary tree.
-13. Nodes
+**9. Height**
 
-13-binary_tree_nodes.c: C function that returns the number of nodes in a binary tree with at least one child.
-14. Balance factor
+`9-binary_tree_height.c`: C function that returns the height of a binary tree.
 
-14-binary_tree_balance.c: C function that returns the balance factor of a binary tree.
-15. Is full
+**10. Depth**
 
-15-binary_tree_is_full.c: C function that checks if a binary tree is full.
+`10-binary_tree_depth.c`: C function that returns the depth of a given node in a binary tree.
+
+**11. Size**
+
+`11-binary_tree_size.c`: C function that returns the size of a binary tree.
+
+**12. Leaves**
+
+`12-binary_tree_leaves.c`: C function that returns the number of leaves in a binary tree.
+
+**13. Nodes**
+
+`13-binary_tree_nodes.c`: C function that returns the number of nodes in a binary tree with at least one child.
+
+**14. Balance factor**
+
+`14-binary_tree_balance.c`: C function that returns the balance factor of a binary tree.
+
+**15. Is full**
+
+`15-binary_tree_is_full.c`: C function that checks if a binary tree is full.
 Returns 1 if a tree is full, 0 otherwise.
-16. Is perfect
 
-16-binary_tree_is_perfect.c: C function that checks if a binary tree is perfect.
+**16. Is perfect**
+
+`16-binary_tree_is_perfect.c`: C function that checks if a binary tree is perfect.
 Returns 1 if a tree is perfect, 0 otherwise.
-17. Sibling
 
-17-binary_tree_sibling.c: C function that returns a pointer to the sibling of a given node in a binary tree.
+**17. Sibling**
+
+`17-binary_tree_sibling.c`: C function that returns a pointer to the sibling of a given node in a binary tree.
 Returns NULL if no sibling is found.
-18. Uncle
 
-18-binary_tree_uncle.c: C function that returns a pointer to the uncle of a given node in a binary tree.
+**18. Uncle**
+
+`18-binary_tree_uncle.c`: C function that returns a pointer to the uncle of a given node in a binary tree.
 Returns NULL if no uncle is found.
-19. Lowest common ancestor
+
+**19. Lowest common ancestor**
 
 100-binary_trees_ancestor.c: C function that returns a pointer to the lowest common ancestor node of two given nodes in a binary tree.
 Returns NULL if no common ancestor is found.

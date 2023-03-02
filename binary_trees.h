@@ -34,6 +34,18 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 int binary_tree_is_root(const binary_tree_t *node);
 /* check if tree is leaf */
 int binary_tree_is_leaf(const binary_tree_t *node);
+
+
+/* measures the depth of a node in a binary tree*/
+size_t binary_tree_depth(const binary_tree_t *tree);
+/* measures the size of a binary tree */
+size_t binary_tree_size(const binary_tree_t *tree);
+/*counts the leaves in a binary tree*/
+size_t binary_tree_leaves(const binary_tree_t *tree);
+/* counts nodes */
+size_t binary_tree_nodes(const binary_tree_t *tree);
+/* checks if tree is balanced */
+int binary_tree_balance(const binary_tree_t *tree);
 /* checks if a binary tree is full */
 int binary_tree_is_full(const binary_tree_t *tree);
 /* check if tree is perfect */

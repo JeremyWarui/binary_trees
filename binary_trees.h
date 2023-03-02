@@ -32,5 +32,15 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 /* check if node is root */
 int binary_tree_is_root(const binary_tree_t *node);
+/* check if tree is leaf */
+int binary_tree_is_leaf(const binary_tree_t *node);
+/* checks if a binary tree is full */
+int binary_tree_is_full(const binary_tree_t *tree);
+/* check if tree is perfect */
+int binary_tree_is_perfect(const binary_tree_t *tree);
+/* check if node is sibling */
+binary_tree_t *binary_tree_sibling(binary_tree_t *node);
+/* check the uncle of the node */
+binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 
 #endif

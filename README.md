@@ -7,7 +7,6 @@ Contains all the prototypes of the projects functions.
 Must push your header file
 All your header files should be include guarded.
 
-
 Test files
 Has all the test files to test the projects functions.
 We did not push them to our repo.
@@ -16,6 +15,7 @@ Data structures
 Must include them in the header file.
 
 Basic Binary Tree
+
 ```
 /**
  * struct binary_tree_s - Binary tree node
@@ -36,27 +36,31 @@ struct binary_tree_s
 
 ` typedef struct binary_tree_s binary_tree_t;`
 
-Binary Search Tree
+_Binary Search Tree_
 
 ` typedef struct binary_tree_s bst_t;`
 
-AVL Tree
+_AVL Tree_
 
-` typedef struct binary_tree_s avl_t;`
+`typedef struct binary_tree_s avl_t;`
 
-Max Binary Heap
+_Max Binary Heap_
 
 `typedef struct binary_tree_s heap_t;`
 
-Print function
+_Print function_
+
 Functions to print binary trees in a pretty way
+
 ```
+
                            .----------------------(006)-------.
                       .--(001)-------.                   .--(008)--.
                  .--(-02)       .--(003)-------.       (007)     (009)
        .-------(-06)          (002)       .--(005)
   .--(-08)--.                           (004)
 (-09)     (-07)
+
 ```
 
 ### Tasks
@@ -152,76 +156,91 @@ Returns NULL if no uncle is found.
 
 **19. Lowest common ancestor**
 
-100-binary_trees_ancestor.c: C function that returns a pointer to the lowest common ancestor node of two given nodes in a binary tree.
+`100-binary_trees_ancestor.c`: C function that returns a pointer to the lowest common ancestor node of two given nodes in a binary tree.
 Returns NULL if no common ancestor is found.
-20. Level-order traversal
 
-101-binary_tree_levelorder.c: C function that traverses a binary tree using level-order traversal.
-21. Is complete
+**20. Level-order traversal**
 
-102-binary_tree_is_complete.c: C function that checks if a binary tree is complete.
+`101-binary_tree_levelorder.c`: C function that traverses a binary tree using level-order traversal.
+
+**21. Is complete**
+
+`102-binary_tree_is_complete.c`: C function that checks if a binary tree is complete.
 Returns 1 if the tree is complete, 0 otherwise.
-22. Rotate left
 
-103-binary_tree_rotate_left.c: C function that performs a left-rotation on a binary tree.
+**22. Rotate left**
+
+`103-binary_tree_rotate_left.c`: C function that performs a left-rotation on a binary tree.
 Returns a pointer to the new root node of the tree after rotation.
-23. Rotate right
 
-104-binary_tree_rotate_right.c: C function that performs a right-rotation on a binary tree.
+**23. Rotate right**
+
+`104-binary_tree_rotate_right.c`: C function that performs a right-rotation on a binary tree.
 Returns a pointer to the new root node of the tree after rotation.
-24. Is BST
 
-110-binary_tree_is_bst.c: C function that checks if a binary tree is a valid binary search tree.
+**24. Is BST**
+
+`110-binary_tree_is_bst.c`: C function that checks if a binary tree is a valid binary search tree.
 Returns 1 if the tree is a valid BST, 0 otherwise.
-25. BST - Insert
 
-111-bst_insert.c: C function that inserts a value into a binary search tree.
+**25. BST - Insert**
+
+`111-bst_insert.c`: C function that inserts a value into a binary search tree.
 Returns a pointer to the new node, or NULL on failure.
 If the tree is NULL, the value becomes the root node.
 The value is ignored if it is already present in the tree.
-26. BST - Array to BST
 
-112-array_to_bst.c: C function that builds a binary search tree from an array.
+**26. BST - Array to BST**
+
+`112-array_to_bst.c`: C function that builds a binary search tree from an array.
 Returns a pointer to the root node of the created tree, or NULL on failure.
-27. BST - Search
 
-113-bst_search.c: C function that searches for a value in a binary search tree.
+**27. BST - Search**
+
+`113-bst_search.c`: C function that searches for a value in a binary search tree.
 If the value is matched in the BST, returns a pointer to the matched node.
 Otherwise, returns NULL.
-28. BST - Remove
 
-114-bst_remove.c: C function that removes a node from a binary search tree.
+**28. BST - Remove**
+
+`114-bst_remove.c`: C function that removes a node from a binary search tree.
 Returns a pointer to the new root node of the tree after deletion.
 If the node to be deleted has two children, it is replaced with its first in-order successor.
-29. Big O #BST
 
-115-O: Text file containing the average time complexities of binary search tree operations (one answer per line):
+**29. Big O #BST**
+
+`115-O`: Text file containing the average time complexities of binary search tree operations (one answer per line):
 Inserting the value n.
 Removing the node with the value n.
 Searching for a node in a BST of size n.
-30. Is AVL
 
-120-binary_tree_is_avl.c: C function that checks if a binary tree is a valid AVL tree.
+**30. Is AVL**
+
+`120-binary_tree_is_avl.c`: C function that checks if a binary tree is a valid AVL tree.
 If the tree is a valid AVL tree, returns 1.
 Otherwise, returns 0.
-31. AVL - Insert
 
-121-avl_insert.c: C function that inserts a value in an AVL tree.
+**31. AVL - Insert**
+
+`121-avl_insert.c`: C function that inserts a value in an AVL tree.
 Returns a value to the inserted node, or NULL on failure.
-32. AVL - Array to AVL
 
-122-array_to_avl.c: C function that builds an AVL tree from an array.
+**32. AVL - Array to AVL**
+
+`122-array_to_avl.c`: C function that builds an AVL tree from an array.
 Returns a pointer to the root node of the created AVL tree, or NULL on failure.
 Ignores duplicate values.
-35. Big O #AVL Tree
 
-125-O: Text file containing the average time complexities of AVL tree opeartions (one answer per line):
+**35. Big O #AVL Tree**
+
+`125-O`: Text file containing the average time complexities of AVL tree opeartions (one answer per line):
 Inserting the value n.
 Removing the node with the value n.
 Searching for a node in an AVL tree of size n.
-41. Big O #Binary Heap
 
-135-O: Text file containing the average time complexities of binary heap opeartions (one answer per line):
+**41. Big O #Binary Heap**
+
+`135-O`: Text file containing the average time complexities of binary heap opeartions (one answer per line):
 Inserting the value n.
 Extracting the root node.
 Searching for a node in a binary heap of size n.
